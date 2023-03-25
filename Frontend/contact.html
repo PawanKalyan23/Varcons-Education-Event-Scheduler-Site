@@ -1,0 +1,70 @@
+<html>
+
+
+<head>
+<title>contact page</title>
+
+<link rel="stylesheet" href="style1.css">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Scheduler</title>
+</head>
+<body>
+
+
+</body>
+<div class="banner">
+    <div class="navbar">
+        <img src="logo1.png" class="logo">
+       <ul>
+           <li><a href="index.html">HOME</a></li>
+            <li><a href="events .html">EVENTS</a></li>
+            <li><a href="registration.html">REGISTRATION</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </div>
+      <main>
+   <section id="contact-form">
+  <h2>Send your queries or feedback</h2>
+  <form id="contact" name="contact" accept-charset="utf-8">
+    <label for="name"><span>Name</span><input name="name" type="text" placeholder="Name" id="name"/></label>
+    <label for="email"><span>Email</span><input name="email" type="email" placeholder="Email" id="email"/></label>
+    <label for="message"><span>Message</span><textarea name="message" placeholder="Message" id="message"></textarea></label>
+    <input name="submit" type="submit" value="Send"/>
+  </form>
+  <aside>
+    <!-- <p>Just hit Send on an empty form to see the invalid input animation</p> -->
+    <!-- <p>Fill in the form fields to see the success animation (no real validation, any random input will do)</p> -->
+  </aside>
+</section>
+          
+        <!--Script for success on form feedback-->
+          <script>
+            var nextStep = document.querySelector('#nextStep');
+          
+          nextStep.addEventListener('click', function (e) {
+            e.preventDefault();
+            // Hide first view
+            document.getElementById('my_form').style.display = 'none';
+        
+            // Show thank you message element
+            document.getElementById('thank_you').style.display = 'block';
+          });
+
+          var close_btn = document.querySelector('#close_btn');
+          
+          close_btn.addEventListener('click', function (e) {
+            e.preventDefault();
+            // Hide first view
+            document.getElementById('my_form').style.display = 'inherit';
+        
+            // Show thank you message element
+            document.getElementById('thank_you').style.display = 'none';
+          });
+          </script>
+    </main><br>
+    
+
+
+</html>
